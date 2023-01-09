@@ -1,4 +1,7 @@
 @import "./sections.scss";
-body {
-    background-color: red;
-}
+@import "./body.scss";
+@import "./banner.scss";
+@import "./divider.scss";
+@import "./main.scss";
+@import "./mainContent.scss";
+@import "./footer.scss";
