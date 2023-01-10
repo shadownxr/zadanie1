@@ -4,8 +4,8 @@
     height: 96px;
     padding: 0 40px;
     margin: 0 auto;
-    min-width: 1024px;
-    max-width: 100%;
+    /*min-width: 1024px;*/
+    max-width: 1920px;
     position: absolute;
     right: 0;
     box-sizing: border-box;
@@ -78,9 +78,14 @@
     background: #000000;
 }
 
-.menu_button:hover {
+.signin_button:hover {
     color: #000000;
-    background-color: #d2cbcb;
+    background: #cccccc;
+}
+
+.signup_button:hover {
+    color: #ffffff;
+    background: #333333;
 }
 
 #user_image {
