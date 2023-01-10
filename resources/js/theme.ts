@@ -1,3 +1,1 @@
-function test() {
-    return 1;
-}
+import "./input_field";
