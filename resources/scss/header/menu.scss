@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: background 200ms;
 
     &.menu_scrolled {
         box-shadow: rgb(226, 226, 226) 0px -2px 0px inset;
