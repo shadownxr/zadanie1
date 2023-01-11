@@ -14,6 +14,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: background 200ms;
+
+    &.menu_scrolled {
+        box-shadow: rgb(226, 226, 226) 0px -2px 0px inset;
+        background: #ffffff;
+    }
 }
 
 #menu_image {
@@ -91,4 +97,16 @@
 #user_image {
     height: 20px;
     width: 20px;
+}
+
+.top_scrolled {
+    height: 0px;
+}
+
+.anchor_scrolled {
+    z-index: 3;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 }
