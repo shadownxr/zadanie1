@@ -91,6 +91,10 @@
                         color: #000000;
                         border-radius: 0;
                         width: 100%;
+
+                        &:focus {
+                            box-shadow: rgb(0, 0, 0) 0px -2px 0px inset;
+                        }
                     }
 
                     .arrow_wrapper {
