@@ -568,60 +568,62 @@
     <div class="dialog_window">
         <div class="dialog_section">
             <div class="space"></div>
-            <div class="dialog">
-                <div class="top_section">
-                    <button class="close_button">
-                        <img src="./assets/icons/cross-23.svg" height="24px" width="24px">
-                    </button>
-                </div>
-                <div class="main_section">
-                    <div class="title">
-                        Wybierz godzinę
-                    </div>
-                    <div class="select_wrapper">
-                        <select class="select" id="date">
-                            <option value="2023-01-12">Dzisiaj, czw., 12 sty</option>
-                            <option value="2023-01-13">Jutro, pt., 13 sty</option>
-                            <option value="2023-01-14">sob., 14 sty</option>
-                            <option value="2023-01-15">niedz., 15 sty</option>
-                            <option value="2023-01-16">pon., 16 sty</option>
-                            <option value="2023-01-17">wt., 17 sty</option>
-                            <option value="2023-01-18">śr., 18 sty</option>
-                        </select>
-                        <div class="arrow_wrapper">
-                            <img 
-                                src="./assets/icons/down-arrow-svgrepo-com.svg"
-                                height="16px"
-                                width="16px"
-                            >
+                <div class="dialog">
+                    <div class="dialog_focus">
+                        <div class="top_section">
+                            <button class="close_button">
+                                <img src="./assets/icons/cross-23.svg" height="24px" width="24px">
+                            </button>
+                        </div>
+                        <div class="main_section">
+                            <div class="title">
+                                Wybierz godzinę
+                            </div>
+                            <div class="select_wrapper">
+                                <select class="select" id="date">
+                                    <option value="2023-01-12">Dzisiaj, czw., 12 sty</option>
+                                    <option value="2023-01-13">Jutro, pt., 13 sty</option>
+                                    <option value="2023-01-14">sob., 14 sty</option>
+                                    <option value="2023-01-15">niedz., 15 sty</option>
+                                    <option value="2023-01-16">pon., 16 sty</option>
+                                    <option value="2023-01-17">wt., 17 sty</option>
+                                    <option value="2023-01-18">śr., 18 sty</option>
+                                </select>
+                                <div class="arrow_wrapper">
+                                    <img 
+                                        src="./assets/icons/down-arrow-svgrepo-com.svg"
+                                        height="16px"
+                                        width="16px"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="space"></div>
+
+                            <div class="select_wrapper">
+                                <select class="select" id="hour">
+                                    <option value="11:45-12:15">11:45-12:15</option>
+                                    <option value="12:00-12:30">12:00-12:30</option>
+                                    <option value="12:15-12:45">12:15-12:45</option>
+                                    <option value="12:30-13:00">12:30-13:00</option>
+                                    <option value="12:45-13:15">12:45-13:15</option>
+                                    <option value="13:00-13:30">13:00-13:30</option>
+                                    <option value="13:15-13:45">13:15-13:45</option>
+                                </select>
+                                <div class="arrow_wrapper">
+                                    <img 
+                                        src="./assets/icons/down-arrow-svgrepo-com.svg"
+                                        height="16px"
+                                        width="16px"
+                                    >
+                                </div>
+                            </div>
+
+                            <button class="button accept_button">Zaplanuj</button>
+                            <button class="button cancel_button">Dostarcz teraz</button>
                         </div>
                     </div>
-
-                    <div class="space"></div>
-
-                    <div class="select_wrapper">
-                        <select class="select" id="hour">
-                            <option value="11:45-12:15">11:45-12:15</option>
-                            <option value="12:00-12:30">12:00-12:30</option>
-                            <option value="12:15-12:45">12:15-12:45</option>
-                            <option value="12:30-13:00">12:30-13:00</option>
-                            <option value="12:45-13:15">12:45-13:15</option>
-                            <option value="13:00-13:30">13:00-13:30</option>
-                            <option value="13:15-13:45">13:15-13:45</option>
-                        </select>
-                        <div class="arrow_wrapper">
-                            <img 
-                                src="./assets/icons/down-arrow-svgrepo-com.svg"
-                                height="16px"
-                                width="16px"
-                            >
-                        </div>
-                    </div>
-
-                    <button class="button accept_button">Zaplanuj</button>
-                    <button class="button cancel_button">Dostarcz teraz</button>
                 </div>
-            </div>
             <div class="space"></div>
         </div>
     </div>

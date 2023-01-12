@@ -40,3 +40,13 @@ $(() => {
         dialog_window.removeClass('show');
     })
 })
+
+$(() => {
+    $(document).on('click', (event) => {
+        if($(event.target).closest('.select_box').length == 0 && dialog_window.hasClass('show')){
+            if($(event.target).closest('.dialog_focus').length == 0){
+                dialog_window.removeClass('show');
+            }
+        }
+    })
+})
