@@ -1,0 +1,159 @@
+.dialog_window {
+    overflow: auto;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background: rgba(38, 38, 38, 0.8);
+    opacity: 0;
+
+    &.show {
+        opacity: 1;
+        z-index: 4;
+        height: 100vh;
+    }
+
+    .dialog_section {
+        min-height: 100vh;
+        justify-content: flex-start;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        .space {
+            height: 80px;
+        }
+
+        .dialog {
+            background: #ffffff;
+            margin: 0 auto;
+            position: relative;
+
+            .top_section {
+                position: sticky;
+                height: 48px;
+                z-index: 3;
+                width: 100%;
+                top: 0;
+
+                .close_button {
+                    left: 8px;
+                    top: 8px;
+                    height: 48px;
+                    width: 48px;
+                    z-index: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                }
+            }
+
+            .main_section {
+                width: 410px;
+                padding: 24px;
+
+                .title {
+                    line-height: 40px;
+                    font-size: 32px;
+                    font-weight: 700;
+                    font-family: sans-serif;
+                    margin-bottom: 24px;
+                }
+
+                .select_wrapper {
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    width: 100%;
+                    position: relative;
+
+                    .select {
+                        padding: 12px 32px 12px 16px;
+                        background-color: rgb(238,238,238);
+                        outline: none;
+                        appearance: none;
+                        transition: box-shadow 0.3s ease-in-out;
+                        box-shadow: inset 0px -1px 0px #eeeeee;
+                        border: none;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        cursor: pointer;
+                        font-family: sans-serif;
+                        color: #000000;
+                        border-radius: 0;
+                        width: 100%;
+
+                        &:focus {
+                            box-shadow: rgb(0, 0, 0) 0px -2px 0px inset;
+                        }
+                    }
+
+                    .arrow_wrapper {
+                        right: 8px;
+                        pointer-events: none;
+                        top: calc(50% - 10px);
+                        right: 12px;
+                        position: absolute;
+                    }
+                }
+
+                .button {
+                    font-size: 18px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    border: 0px;
+                    width: 100%;
+                    min-height: 56px;
+                    box-sizing: border-box;
+                    padding: 12px 16px;
+                    line-height: 20px;
+                    justify-content: center;
+                    font-size: 16px;
+                    font-weight: 500;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    white-space: nowrap;
+                    text-decoration: none;
+                    font-family: sans-serif;
+                }
+                
+                .accept_button {
+                    margin-top: 24px;
+                    color: #ffffff;
+                    background: #000000;
+                }
+
+                .accept_button:hover {
+                    color: #ffffff;
+                    background: #333333;
+                }
+
+                .cancel_button {
+                    margin-top: 12px;
+                    color: #000000;
+                    background: #eeeeee;
+                }
+                
+                .cancel_button:hover {
+                    color: #000000;
+                    background: #e2e2e2;
+                }
+            
+
+                .space {
+                    height: 12px;
+                }
+            }
+        }
+    }
+}

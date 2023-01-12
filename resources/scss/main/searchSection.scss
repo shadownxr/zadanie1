@@ -87,12 +87,94 @@
     box-shadow: inset 0px -1px 0px #eeeeee;
     position: relative;
     display: block;
-}
+    cursor: pointer;
 
-.select_wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    .select_button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        outline: none;
+        background: transparent;
+        border: 0;
+        
+        .select_text {
+            font-family: sans-serif;
+            line-height: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .arrow_wrapper {
+            height: 48px;
+            width: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+
+    .select_window {
+        padding: 8px 0px 16px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: -1;
+        opacity: 0;
+        top: 100%;
+        background: #ffffff;
+        left: 0;
+        flex-direction: column;
+        display: flex;
+        min-width: 100%;
+        position: absolute;
+
+        &.show {
+            z-index: 2;
+            opacity: 1;
+        }
+
+        .select_button {
+            transition: background 100ms ease 0s;
+            outline: none;
+            padding: 8px 16px;
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            border-width: 0;
+            margin: 0;
+            background: transparent;
+
+            .image_wrapper {
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+                background-color: #f6f6f6;
+                flex: none;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+
+            .select_image {
+                line-height: 1;
+                height: 20px;
+                width: 20px;
+                display: block;
+            }
+
+            .text_wrapper {
+                white-space: nowrap;
+                line-height: 20px;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: sans-serif;
+            }
+        }
+
+        .select_button:hover {
+            background: rgb(246,246,246);
+        }
+    }
 }
 
 .search_button {
