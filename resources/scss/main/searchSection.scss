@@ -63,7 +63,7 @@
         }
 
         &.active {
-            border-bottom: 2px solid #000000;
+            box-shadow: rgb(0, 0, 0) 0px -2px 0px inset;
         }
     }
 }
