@@ -1,5 +1,15 @@
 .divider {
     background-color: white;
     min-height: 80px;
-    min-width: 100%;
+
+    @media screen and (max-width: 640px){
+        min-height: 20px;
+    }
+
+    &._no_mobile_cut {
+        @media screen and (max-width: 640px){
+            min-height: 80px;
+        }
+    }
+    //min-width: 100%;
 }

@@ -4,7 +4,6 @@
     height: 96px;
     padding: 0 40px;
     margin: 0 auto;
-    /*min-width: 1024px;*/
     max-width: 1920px;
     position: absolute;
     right: 0;
@@ -15,6 +14,11 @@
     flex-direction: row;
     align-items: center;
     transition: background 200ms;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 640px){
+        padding: 10px 40px;
+    }
 
     &.menu_scrolled {
         box-shadow: rgb(226, 226, 226) 0px -2px 0px inset;
@@ -50,6 +54,10 @@
     max-width: 722px;
     overflow: hidden;
     width: 100%;
+}
+
+.expanding_space {
+    flex: 1;
 }
 
 .menu_button {

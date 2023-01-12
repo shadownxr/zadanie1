@@ -29,11 +29,15 @@
         margin: 0 auto;
         max-width: 1920px;
         box-sizing: border-box;
-        display: block;
-        min-width: 1024px;
+        //min-width: 1024px;
 
         .wrapper {
             display: flex;
+
+            @media screen and (max-width: 640px){
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
 
             .download_links {
                 display: flex;
@@ -53,6 +57,9 @@
                     height: 24px;
                     width: auto;
 
+                    @media screen and (max-width: 640px){
+                        margin-bottom: 24px;
+                    }
                 }
             }
 
@@ -128,6 +135,10 @@
             .row {
                 display: flex;
 
+                @media screen and (max-width: 640px){
+                    flex-wrap: wrap;
+                }
+
                 .social_links {
                     flex: none;
                     flex-direction: row;
@@ -141,6 +152,7 @@
 
                 .terms {
                     display: flex;
+                    flex-wrap: wrap;
 
                     a {
                         font-weight: normal;
