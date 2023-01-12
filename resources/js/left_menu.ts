@@ -1,13 +1,23 @@
-const menu_button = document.querySelector("#menu_button") as HTMLButtonElement;
-const menu_background = document.querySelector(".menu_background") as HTMLDivElement;
-const left_menu = document.querySelector(".left_menu") as HTMLDivElement;
+import * as $ from "jquery";
 
-menu_button.onclick = () => {
-    menu_background.classList.add("active");
-    left_menu.classList.add("active");
-}
+const menu_button = $("#menu_button");
+const menu_background = $(".menu_background");
+const left_menu = $(".left_menu");
 
-menu_background.onclick = () => {
-    menu_background.classList.remove("active");
-    left_menu.classList.remove("active");
-}
+$(() => {
+    menu_button.on("click", () => {
+        menu_background.addClass("active");   
+        left_menu.addClass("active");
+    })
+})
+
+$(() => {
+    $(document).on("click", (event) => {
+        if($(event.target).closest('#menu_button').length == 0 && left_menu.hasClass("active")){
+            if($(event.target).closest(left_menu).length == 0){
+                left_menu.removeClass("active");
+                menu_background.removeClass("active");
+            }
+        }
+    })
+})
