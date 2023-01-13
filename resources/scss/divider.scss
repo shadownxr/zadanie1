@@ -2,12 +2,12 @@
     background-color: white;
     min-height: 80px;
 
-    @media screen and (max-width: 640px){
+    @media screen and (max-width: 820px){
         min-height: 20px;
     }
 
     &._no_mobile_cut {
-        @media screen and (max-width: 640px){
+        @media screen and (max-width: 820px){
             min-height: 80px;
         }
     }

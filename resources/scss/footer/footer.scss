@@ -14,6 +14,10 @@
         color: #000000;
         display: block;
 
+        @media screen and (max-width: 820px){
+            margin-bottom: 20px;
+        }
+
         a {
             color: #000000;
             text-decoration: none;
@@ -29,14 +33,16 @@
         margin: 0 auto;
         max-width: 1920px;
         box-sizing: border-box;
-        //min-width: 1024px;
+        
+        @media screen and (max-width: 820px){
+            padding: 0 16px;
+        }
 
         .wrapper {
             display: flex;
 
-            @media screen and (max-width: 640px){
+            @media screen and (max-width: 820px){
                 flex-direction: column;
-                flex-wrap: wrap;
             }
 
             .download_links {
@@ -45,6 +51,10 @@
                 align-items: flex-start;
                 justify-content: space-between;
                 flex-direction: column;
+
+                @media screen and (max-width: 820px){
+                    margin-bottom: 48px;
+                }
 
                 .links_wrapper {
                     gap: 16px;
@@ -57,8 +67,8 @@
                     height: 24px;
                     width: auto;
 
-                    @media screen and (max-width: 640px){
-                        margin-bottom: 24px;
+                    @media screen and (max-width: 820px){
+                        margin-bottom: 48px;
                     }
                 }
             }
@@ -69,7 +79,11 @@
                 display: flex;
 
                 ul {
-                    list-style: none;;
+                    list-style: none;
+                    
+                    @media screen and (max-width: 820px){
+                        padding-left: 0px;
+                    }
 
                     a {
                         font-weight: normal;
@@ -94,7 +108,11 @@
                 display: flex;
 
                 ul {
-                    list-style: none;;
+                    list-style: none;
+
+                    @media screen and (max-width: 820px){
+                        padding-left: 0px;
+                    }
 
                     a {
                         font-weight: normal;
@@ -135,24 +153,34 @@
             .row {
                 display: flex;
 
-                @media screen and (max-width: 640px){
-                    flex-wrap: wrap;
+                @media screen and (max-width: 820px){
+                    flex-direction: column;
                 }
 
                 .social_links {
                     flex: none;
                     flex-direction: row;
                     display: flex;
+
+                    @media screen and (max-width: 820px){
+                        margin-bottom: 40px;
+                    }
                 }
 
                 .white_space {
                     flex: 1 0 36px;
-                    display: block;
+
+                    @media screen and (max-width: 820px){
+                        flex: 0;
+                    }
                 }
 
                 .terms {
                     display: flex;
-                    flex-wrap: wrap;
+                    
+                    @media screen and (max-width: 820px){
+                        flex-direction: column;
+                    }
 
                     a {
                         font-weight: normal;
