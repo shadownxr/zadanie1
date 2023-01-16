@@ -4,7 +4,6 @@ const header_top = document.querySelector('#header_top') as HTMLDivElement;
 const header_anchor = document.querySelector('#header_anchor') as HTMLDivElement;
 const top_nav = document.querySelector('.top_nav') as HTMLDivElement;
 const input_box = document.querySelector('#header_input_box') as HTMLDivElement;
-const search_section = document.querySelector('.search_section') as HTMLDivElement;
 
 $(() => {
     if(window.pageYOffset !== 0){
@@ -15,7 +14,7 @@ $(() => {
         if(($('.search_section').offset().top + $('.search_section').height()) < (window.pageYOffset + top_nav.offsetHeight)){
             input_box.classList.remove('hidden');
             input_box.classList.add('shown');
-            $('.text').addClass('shown');
+            $('#header_search_input').addClass('shown');
         }
     }
 
@@ -33,21 +32,13 @@ $(() => {
         if(($('.search_section').offset().top + $('.search_section').height()) < (window.pageYOffset + top_nav.offsetHeight)){
             input_box.classList.remove('hidden');
             input_box.classList.add('shown');
-            $('.text').addClass('shown');
+            $('#header_search_input').addClass('shown');
         }
 
         if(($('.search_section').offset().top + $('.search_section').height()) > (window.pageYOffset + top_nav.offsetHeight)){
             input_box.classList.remove('shown');
             input_box.classList.add('hidden');
-            $('.text').removeClass('shown');
+            $('#header_search_input').removeClass('shown');
         }
-
-        /*if(!$('.search_section').is(':visible')){
-            input_box.classList.remove('hidden');
-            input_box.classList.add('shown');
-        } else {
-            input_box.classList.add('hidden');
-            input_box.classList.remove('shown');
-        }*/
     }
 })

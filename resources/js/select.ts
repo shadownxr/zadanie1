@@ -28,13 +28,4 @@ $(() => {
         }
     })
 })
-/*const target = document.querySelector('.select_box') as HTMLDivElement;
-
-document.addEventListener('click', (event) => {
-  const withinBoundaries = event.composedPath().includes(target);
-
-  if (!withinBoundaries) {
-    $('.select_window').removeClass('show');
-  }
-})*/
 
