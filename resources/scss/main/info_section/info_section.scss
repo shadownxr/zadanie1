@@ -1,3 +1,5 @@
+@import "../../themes/list_theme.scss";
+
 .info_section {
     background-color: white;
     min-height: 1024px;
@@ -120,56 +122,22 @@
         }
 
         .list_of_cities {
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-            gap: 24px;
-            grid-auto-flow: column;
-            display: grid;
-            margin-top: 24px;
+            @include custom_list(repeat(4, 1fr), repeat(6, 1fr));
 
             @media screen and (max-width: 820px){
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(12, 1fr);
                 justify-items: left;
             }
-
-            .name {
-                @media screen and (max-width: 820px){
-                    text-align: left;
-                }
-
-                a {
-                    text-decoration: none;
-                    color: #000000;
-                    font-family: sans-serif;
-                }
-            }
         }
 
         .list_of_countries {
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(8, 1fr);
-            gap: 24px;
-            grid-auto-flow: column;
-            display: grid;
-            margin-top: 24px;
+            @include custom_list(repeat(4, 1fr), repeat(8, 1fr));
 
             @media screen and (max-width: 820px){
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(15, 1fr);            
                 justify-items: left;
-            }
-
-            .name {
-                @media screen and (max-width: 820px){
-                    text-align: left;
-                }
-
-                a {
-                    text-decoration: none;
-                    color: #000000;
-                    font-family: sans-serif;
-                }
             }
         }
     }

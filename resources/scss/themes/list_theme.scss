@@ -26,3 +26,24 @@
         }
     }
 }
+
+@mixin custom_list($grid_columns, $grid_rows) {
+    grid-template-columns: $grid_columns;
+    grid-template-rows: $grid_rows;
+    gap: 24px;
+    grid-auto-flow: column;
+    display: grid;
+    margin-top: 24px;
+
+    .name {
+        @media screen and (max-width: 820px){
+            text-align: left;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+            font-family: sans-serif;
+        }
+    }
+}
