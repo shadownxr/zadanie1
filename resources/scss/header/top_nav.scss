@@ -1,6 +1,6 @@
 @import "../themes/button_theme.scss";
 
-.menu {
+.top_nav {
     z-index: 1;
     background: transparent;
     height: 96px;
@@ -21,7 +21,7 @@
         padding: 20px 16px;
     }
 
-    #menu_button {
+    #top_nav_button {
         background-color: transparent;
         background-repeat: no-repeat;
         border: none;
@@ -33,14 +33,14 @@
         @media screen and (max-width: 820px){
             min-height: 20px;
         }
+
+        img {
+            height: 20px;
+            width: 20px;
+        }
     }
 
-    #menu_image {
-        height: 20px;
-        width: 20px;
-    }
-
-    img {
+    #homelink_image {
         height: 24px;
         width: auto;
         aspect-ratio: auto 146 / 24;
@@ -58,42 +58,42 @@
         overflow: hidden;
         width: 100%;
     }
-}
 
-.signin_button {
-    @include button(White, 48px);
+    .signin_button {
+        @include button(White, 48px);
+    
+        @media screen and (max-width: 820px){
+            min-height: 24px;
+            padding: 12px 12px;
+            line-height: 16px;
+        }
+    
+        @media screen and (max-width: 820px){
+            font-size: 0px;
+        }
 
-    @media screen and (max-width: 820px){
-        min-height: 24px;
-        padding: 12px 12px;
-        line-height: 16px;
+        img {
+            height: 20px;
+            width: 20px;
+        
+            @media screen and (max-width: 820px){
+                height: 16px;
+                width: 16px;
+            }
+        }
     }
-
-    @media screen and (max-width: 820px){
-        font-size: 0px;
+    
+    .signup_button {
+        @include button(Black, 48px);
+    
+        @media screen and (max-width: 820px){
+            min-height: 24px;
+            padding: 12px 12px;
+            line-height: 16px;
+        }
     }
-}
-
-.signup_button {
-    @include button(Black, 48px);
-
-    @media screen and (max-width: 820px){
-        min-height: 24px;
-        padding: 12px 12px;
-        line-height: 16px;
+    
+    .expanding_space {
+        width: 100%;
     }
-}
-
-#user_image {
-    height: 20px;
-    width: 20px;
-
-    @media screen and (max-width: 820px){
-        height: 16px;
-        width: 16px;
-    }
-}
-
-.expanding_space {
-    width: 100%;
 }
