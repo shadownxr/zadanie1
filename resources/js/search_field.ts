@@ -1,5 +1,5 @@
-const input = document.querySelector('.text') as HTMLInputElement;
-const input_wrapper = document.querySelector('.input_wrapper') as HTMLDivElement;
+const input = document.querySelector('#search_input') as HTMLInputElement;
+const input_wrapper = document.querySelector('.search_input_wrapper') as HTMLDivElement;
 
 input.onfocus = () => {
     input_wrapper.classList.add('active');

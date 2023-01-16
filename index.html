@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="assets/css/theme.css">
 </head>
 <body>
-    <div class="menu_background">
-        <aside class="left_menu">
+    <div class="left_nav_background">
+        <aside class="left_nav">
             <nav>
                 <div class="nav">
                     <div>
-                        <a href="" class="button signin">
+                        <a href="" class="signin_button">
                             Zarejestruj się
                         </a>
                         <div style="height: 8px"></div>
-                        <a href="" class="button signup">
+                        <a href="" class="signup_button">
                             Zaloguj się
                         </a>
                         <div class="links">
@@ -65,9 +65,9 @@
     <header>
         <div id="header_top" class="">
             <div id="header_anchor" class="">
-                <div class="menu">
-                    <button id="menu_button">
-                        <img id="menu_image" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg">
+                <div class="top_nav">
+                    <button id="top_nav_button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg">
                     </button>
 
                     <div class="spacer _32">
@@ -76,7 +76,7 @@
                     <a href="">
                         <img alt="Strona główna aplikacji&nbsp;Uber&nbsp;Eats" 
                             src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg"
-                            class="homepage_image"
+                            id="homelink_image"
                         >
                     </a>
 
@@ -87,7 +87,7 @@
                     </div>
 
                     <div class="input_box hidden" id="header_input_box">
-                        <div class="input_wrapper">
+                        <div class="header_search_input_wrapper">
                             <img 
                                 src="./assets/icons/pin-48.svg"
                                 class="form_image pin_image"
@@ -95,7 +95,7 @@
                                 width="24px"
                             >
                             <div class="spacer _16"></div>
-                            <input type="text" class="text hidden" placeholder="Wpisz adres dostawy">
+                            <input type="text" class="hidden" id="header_search_input" placeholder="Wpisz adres dostawy">
                             <div class="spacer _8"></div>
                         </div>
                     </div>
@@ -107,10 +107,9 @@
                     </div>
 
                     <div style="display:flex; flex-direction: row;">
-                        <a href="" class="menu_button signin_button">
+                        <a href="" class="signin_button">
                             <img
                                 src="https://www.svgrepo.com/show/105517/user-icon.svg"
-                                id="user_image"
                             >
                             <div class="spacer _4">
                             </div>
@@ -119,7 +118,7 @@
 
                         <div class="spacer _16"></div>
 
-                        <a href="" class="menu_button signup_button">
+                        <a href="" class="signup_button">
                             Zarejestruj się
                         </a>
                     </div>
@@ -133,11 +132,11 @@
             <div class="search_wrapper">
                 <div class="search_section">
 
-                    <h1 class="search_title">Zamów jedzenie pod drzwi</h1>
+                    <h1 id="search_title">Zamów jedzenie pod drzwi</h1>
 
                     <div class="form_box">
                         <div class="input_box">
-                            <div class="input_wrapper">
+                            <div class="search_input_wrapper">
                                 <img 
                                     src="./assets/icons/pin-48.svg"
                                     class="form_image pin_image"
@@ -145,7 +144,7 @@
                                     width="24px"
                                 >
                                 <div class="spacer _16"></div>
-                                <input type="text" class="text" placeholder="Wpisz adres dostawy">
+                                <input type="text" id="search_input" placeholder="Wpisz adres dostawy">
                                 <div class="spacer _8"></div>
                             </div>
                         </div>

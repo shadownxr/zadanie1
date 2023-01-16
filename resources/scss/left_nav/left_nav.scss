@@ -1,4 +1,6 @@
-.menu_background {
+@import "../themes/button_theme.scss";
+
+.left_nav_background {
     transition: opacity 0.40s ease-in-out, width 0s 0.40s, height 0s 0.40s;
     opacity: 0;
     overflow-y: hidden;
@@ -18,7 +20,7 @@
         pointer-events: all;
     }
 
-    .left_menu {
+    .left_nav {
         transition: all 0.40s ease-in-out;
         overflow-x: hidden;
         overflow-y: auto;
@@ -42,50 +44,13 @@
             flex-direction: column;
             display: flex;
             color: #000000;
-            
-            .button {
-                font-size: 19px;
-                border-radius: 8px;
-                cursor: pointer;
-                border: 0px;
-                width: auto;
-                min-height: 56px;
-                box-sizing: border-box;
-                padding: 12px 16px;
-                line-height: 20px;
-                justify-content: center;
-                font-size: 16px;
-                font-weight: 500;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                white-space: nowrap;
-                text-decoration: none;
-                box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04);
-                font-family: sans-serif;
 
-                &.signin {
-                    color: #ffffff;
-                    background: #000000;
-                }
-
-                &.signup {
-                    color: #000000;
-                    background: #ffffff;
-                }
-
+            .signin_button {
+                @include button(Black, 56px, 8px);
             }
-            
-            .button:hover {
-                &.signup {
-                    color: #000000;
-                    background: #cccccc;
-                }
 
-                &.signin {
-                    color: #ffffff;
-                    background: #333333;
-                }
+            .signup_button {
+                @include button(White, 56px, 8px);
             }
 
             .links {
@@ -98,7 +63,6 @@
                     padding-inline-start: 0px;
 
                     li {
-                        display: block;
                         margin-bottom: 16px;
 
                         a {
@@ -134,12 +98,6 @@
             }
 
             p {
-                display: block;
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-                margin-inline-start: 0px;
-                margin-inline-end: 0px;
-
                 line-height: 20px;
                 font-size: 16px;
                 font-weight: 500;
